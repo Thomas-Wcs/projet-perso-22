@@ -11,12 +11,34 @@
         <style>body{font-family : Arial, Helvetica, sans-serif;} </style>
     </head>
 <body>
-    <div id="carrousel">
-        <div id="container">
-            <img src="bouton.png" class="bouton" id="d">
-            <img src="boutong.png" class="bouton" id="g"> 
-        </div>
+
+  <div class="slider-container">
+    <div class="menu">
+      <label for="slide-dot-1"></label>
+      <label for="slide-dot-2"></label>
+      <label for="slide-dot-3"></label>
+      <label for="slide-dot-4"></label>
+      <label for="slide-dot-5"></label>
     </div>
+    
+    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+    <img class="slide-img" src="/imgrec2/gr1.jpg" alt="eglise Grece">
+    <span class="span">CECI EST UN TEXTE</span>
+
+    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+    <img class="slide-img" src="/imgrec2/gr2.jpg">
+    
+    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+    <img class="slide-img" src="/imgrec2/gr3.jpg">
+
+    <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
+    <img class="slide-img" src="/imgrec2/gr4.jpg">
+
+    <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
+    <img class="slide-img" src="/imgrec2/gr5.jpg">
+    <span class="span">CECI EST UN TEXTE</span>
+
+  </div>
 </body>
 <script src="script.js"></script>
 </html>
