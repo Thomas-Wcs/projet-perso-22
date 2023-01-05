@@ -3,14 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  /* figcaption {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
-  font-size: 24px;
-} */
   body {
     background-color: rgb(0, 0, 0);
   }
@@ -25,22 +17,6 @@
     color: rgb(139, 139, 139);
     font-family: Arial;
     font-style: italic;
-  }
-  .nav {
-    display: flex;
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    font-family: Arial;
-  }
-  ul li{
-    list-style-type: none;
-    font-size: 32px;
-  }
-  ul li:hover {
-    background-color: rgb(139, 139, 139);
-    transition: 0.5s;
   }
   .cut1 {
     display: flex;
@@ -367,11 +343,6 @@ textarea {
   z-index: 100;
   transition: left 0.65s ease-out;
 }
-[id^="slide"]:checked ~ .span {
-  left: 0;
-  z-index: 100;
-  transition: left 0.65s ease-out;
-}
 span {
   position: absolute;
   font-size: 32px;
@@ -379,3 +350,114 @@ span {
   z-index: 1500;
 }
 /* FIN CARROUSEL */
+
+/* DEBUT NAV BAR */
+
+nav {
+  width: 100%;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 150px;
+}
+nav > ul {
+  display: flex;
+  text-align: center;
+  height: var(--hauteur-menu);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+
+nav > ul > li:hover > a{
+  color: #2169EC;
+}
+
+nav > ul > li > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+li a {
+  text-decoration: none;
+  font-size: 35px;
+  color: rgb(0, 0, 197);
+}
+.menu-deroulant > a:after{
+  content: '❯';
+  font-size: 15px;
+  margin-left: 7px;
+  display: inline-block;
+}
+
+.menu-deroulant:hover > a:after{
+  animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes rotationFleche {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+
+.sous-menu {
+  margin-top: var(--hauteur-menu);
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  max-height: 0;
+  border-radius: 2px;
+  background-color: rgb(0, 0, 0);
+}
+
+.menu-deroulant:hover > .sous-menu {
+  animation: apparitionSousMenu 1s forwards;
+}
+
+@keyframes apparitionSousMenu {
+  0% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+    border-top: 3px solid rgb(0, 0, 197);
+  }
+  30% {
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+  100% {
+    max-height: 50em;
+    border-top: 3px solid rgb(0, 0, 197);
+    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+  }
+}
+
+.sous-menu > li:hover {
+  background-color: rgba(33, 105, 236, 0.3);
+}
+
+.sous-menu > li > a {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+}
+.sous-menu > li:hover > a {
+  color: white;
+}
+:root{
+  --hauteur-menu: 40px;
+}
