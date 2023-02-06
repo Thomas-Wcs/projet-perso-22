@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+.box {
+  border: 6px solid white;
+  transition: 0.25s ease;
+  background: black;
+  padding: 10px;
+}
+.sectionAdulte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question-clicked {
+  background: rgb(47, 47, 47);
+  border-radius: 30px;
+  border: 6px dashed rgb(127, 127, 127);
+}
+.show-response {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
