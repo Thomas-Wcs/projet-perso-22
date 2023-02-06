@@ -8,8 +8,8 @@
   --txtsize: 32px;
   --background-color: rgb(0, 0, 0);
   --background-color2: rgb(0, 0);
-  --backgroundcover: url("/imgrec2/coverclear.jpg");
-  --backgroundcoverdark: url("/imgrec2/coverdark.jpg");
+  --backgroundcover: url('/imgrec2/coverclear.jpg');
+  --backgroundcoverdark: url('/imgrec2/coverdark.jpg');
   --alltext: ;
 }
 body {
@@ -218,7 +218,6 @@ footer a:hover {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  background-color: ;
   justify-content: space-around;
 }
 .imgbouton1 img {
@@ -477,7 +476,7 @@ textarea {
   z-index: 10;
   transition: left 0s 0.75s;
 }
-[id^="slide"]:checked + .slide-img {
+[id^='slide']:checked + .slide-img {
   left: 0;
   z-index: 100;
   transition: left 0.65s ease-out;
@@ -526,7 +525,7 @@ li a {
   color: rgb(139, 139, 139);
 }
 .menu-deroulant > a:after {
-  content: "❯";
+  content: '❯';
   font-size: 25px;
   margin-left: 20px;
   display: inline-block;
@@ -602,7 +601,7 @@ li a {
 
 svg {
   display: block;
-  font: 10.5em "Montserrat";
+  font: 10.5em 'Montserrat';
   width: 960px;
   height: 300px;
   margin: 0 auto;
@@ -658,7 +657,7 @@ svg {
 .secTextFlo p {
   color: aliceblue;
   font-size: 38px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,
     serif;
   text-align: center;
 }
@@ -670,13 +669,13 @@ svg {
 
 /* SECTION FUMME EFFET TEXTE DEBUT */
 
-@import "compass/css3";
+@import 'compass/css3';
 
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 
 span {
   margin-left: 10px;
-  font: 50px/100px "Finger Paint";
+  font: 50px/100px 'Finger Paint';
   text-align: center;
   color: transparent;
   backface-visibility: hidden;
@@ -779,10 +778,7 @@ SUITE PAGE 4 */
   width: 80%;
   color: aliceblue;
 }
-.secMainero1:hover .divHide2 {
-}
-.divHide2 {
-}
+
 .divimgero div:hover {
   scale: 1.15;
   transition: all 0.5s;
