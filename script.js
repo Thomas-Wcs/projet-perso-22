@@ -10,3 +10,8 @@ function ChangeSlide(sens) {
         numero = 0;
     document.getElementById("slide").src = slide[numero];
 }
+const buttonPre = document.getElementById("precedent");
+buttonPre.addEventListener("click",()=>ChangeSlide(-1))
+
+const buttonSuiv = document.getElementById("suivant");
+buttonSuiv.addEventListener("click",()=>ChangeSlide(1))

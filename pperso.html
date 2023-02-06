@@ -18,17 +18,35 @@
         </div>
             <nav>
                 <ul>
-                    <li><a title="Go to Home page" href="Home.html">Home</a></li>
-                    <li><a title="Go to sea section" href="Home.html">bYsea</a></li>
-                    <li><a title="Go to night section" href="Home.html">bYnight</a></li>
-                    <li><a title="Go to contact page" href="contact.html">Contact</a></li>
+                  <li class="menu-deroulant">
+                    <a title="Go to Home page" href="#">Home</a>
+                    <ul class="sous-menu">
+                      <li><a href="#">page1</a></li>
+                      <li><a href="#">page2</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-deroulant">
+                    <a title="Go to sea section" href="#">bYsea</a>
+                    <ul class="sous-menu">
+                      <li><a href="#">page4</a></li>
+                      <li><a href="#">page5</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-deroulant">
+                    <a title="Go to night section" href="#">bYnight</a>
+                    <ul class="sous-menu">
+                      <li><a href="#">page6</a></li>
+                      <li><a href="#">page7</a></li>
+                    </ul>
+                  </li>
+                  <li><a title="Go to contact page" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+              </nav>
             <h1 class="titreSlider">Un cadre exeptionnel</h1>
             <div id="slider">
                 <img src="imgrec2/gr1.jpg" alt="Grece eglise" id="slide">
-                <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-                <div id="suivant" onclick="ChangeSlide(1)">></div>
+                <div id="precedent"><img src="boutong.png" alt=""></div>
+                <div id="suivant"><img src="bouton.png" alt=""></div>
             </div>
     </header> 
     <a id="sea"></a>
