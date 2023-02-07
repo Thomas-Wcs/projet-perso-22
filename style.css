@@ -5,12 +5,6 @@
 }
 :root {
   --hauteur-menu: 40px;
-  --txtsize: 32px;
-  --background-color: rgb(0, 0, 0);
-  --background-color2: rgb(0, 0);
-  --backgroundcover: url('/imgrec2/coverclear.jpg');
-  --backgroundcoverdark: url('/imgrec2/coverdark.jpg');
-  --alltext: ;
 }
 body {
   background-color: rgb(0, 0, 0);
@@ -383,11 +377,6 @@ textarea {
   .secSauna p {
     font-size: 14px;
   }
-
-  /* footer {
-    position: top;
-  } */
-
   /* 
   FIN DE MEDIA SCREEN
   DEBUT CARROUSEL */
@@ -670,7 +659,6 @@ svg {
 /* SECTION FUMME EFFET TEXTE DEBUT */
 
 @import 'compass/css3';
-
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
 
 span {
@@ -688,6 +676,18 @@ span {
 
 span:nth-child(even) {
   animation-name: smoky-mirror;
+}
+
+@media (max-width: 720px) {
+  span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  span {
+    font-size: 30px;
+  }
 }
 
 @keyframes smoky {
